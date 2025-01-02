@@ -1,0 +1,128 @@
+
+.containerp {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: row;
+    align-items: center;
+    min-height: 100vh;
+    /* margin-top: 3rem; */
+    margin: auto;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* margin-top: 3rem; */
+    margin: auto;
+}
+
+.imgContainer {
+    margin-right: 0rem;
+}
+
+.formContainer {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.formContainer > h1 {
+    font-size: 2.5rem;
+    color: #535353;
+    margin-bottom: 1rem;
+    font-family: serif;
+    font-weight: bold;
+}
+
+
+.inputLabelGroup {
+    position: relative;
+    width: 80%;
+}
+
+.inputForm {
+    border: .1rem solid rgba(178, 175, 180, 0.575);
+    border-radius: .2rem;
+    margin:.3rem auto;
+    padding: .5rem;
+    width: 100%;
+    outline: none;
+    color: #000000;
+    background: none;
+}
+
+.labelForm {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    font-size: .9rem;
+    color: #535353;
+    transition: all 0.2s ease;
+    background-color: rgb(255, 255, 255);
+    padding: .1rem;
+   
+}
+
+.tienesCuenta {
+    color: #535353;
+    margin-top: 1rem;
+}
+
+.tienesCuenta > a {
+    color: #b69663;
+    font-family: serif;
+    font-weight: bold;
+}
+
+/* .submit {
+    margin: 1.3rem;
+    padding: .5rem 1rem;
+    border-radius: .2rem;
+    font-family: serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: #b69663;
+} */
+
+
+.inputForm:focus + .labelForm, .inputForm:not(:placeholder-shown) + .labelForm {
+    transform: translateY(-2rem) scale(.9);
+    transform-origin: left top;
+    color: #535353;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.botonDesabilitado {
+    background-color: #535353;
+}
+
+.googleButton {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #444;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .googleButton:hover {
+    background-color: #f7f7f7;
+  }
+  
+  .googleButton img {
+    margin-right: 8px;
+  }
+  

@@ -1,0 +1,198 @@
+
+.container {
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.imgContainer {
+    margin-right: 0rem;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    background-color: #f8f6f3;
+}
+
+.formContainer > h1 {
+    font-size: 2.5rem;
+    color: #161616;
+    margin-bottom: 1rem;
+    font-family: serif;
+    font-weight: bold;
+}
+
+
+.inputLabelGroup {
+    position: relative;
+    width: 80%;
+}
+
+.inputForm {
+    border: .1rem solid rgba(178, 175, 180, 0.575);
+    border-radius: .2rem;
+    margin:.4rem auto;
+    padding: .5rem;
+    padding-left: 2.2rem;
+    width: 100%;
+    outline: none;
+    background: none;
+    font-family: var(--font-secondary);
+}
+
+.labelForm {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    font-size: .9rem;
+    transition: all 0.2s ease;
+    padding: 0rem .5rem 0rem .5rem;
+    margin: .1rem 1rem 0rem 1.5rem;
+    background-color: #f8f6f3;
+    color: #161616;
+}
+
+.tienesCuenta {
+    /*color: #535353;*/
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.tienesCuenta > a {
+    color: #b69663;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.submit {
+    position: relative;
+    margin: 1.3rem;
+    padding: .5rem 1rem; /* Añadir relleno para que el texto no esté pegado al borde */
+    border-radius: .2rem;
+    font-family: serif;
+    font-weight: bold;
+    color: rgb(252, 247, 247);
+    background-color: #b69663;
+    width: auto; /* Ajustar automáticamente al contenido */
+    height: auto; /* Permitir que la altura se ajuste al contenido */
+    display: inline-block; /* Asegura que el botón sea solo tan ancho como su contenido */
+    text-align: center; /* Centra el texto dentro del botón */
+}
+
+.submitDisabled {
+    position: relative;
+    margin: 1.3rem;
+    padding: .5rem 1rem; /* Mismo relleno que en .submit */
+    border-radius: .2rem;
+    font-family: serif;
+    font-weight: bold;
+    color: rgb(252, 247, 247);
+    background-color: #7d6641bc;
+    width: auto; /* Ajustar automáticamente al contenido */
+    height: auto; /* Permitir que la altura se ajuste al contenido */
+    display: inline-block; /* Asegura que el botón sea solo tan ancho como su contenido */
+    text-align: center; /* Centra el texto */
+    cursor: not-allowed; /* Cambiar el cursor cuando el botón está deshabilitado */
+}
+
+
+.submit:hover {
+    color: #535353;
+    transition: .5s;
+
+}
+
+
+.inputForm:focus + .labelForm, .inputForm:not(:placeholder-shown) + .labelForm {
+    transform: translateY(-2rem) scale(.9);
+    transform-origin: left top;
+    /*color: #535353;*/
+    font-family: serif;
+    font-weight: bold;
+
+}
+
+.submitDisabled {
+    background-color: #b69663a9;
+    color: #ffffff;
+}
+.iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    padding: 0;
+    
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    .formContainer {
+        width: 90%;  /* Se amplía el ancho del formulario */
+        padding: 15px;
+    }
+
+    .formContainer > h1 {
+        font-size: 2rem; /* Reducir el tamaño del título */
+    }
+
+    .inputForm {
+        padding: .8rem; /* Aumentar el padding para mejorar la accesibilidad */
+    }
+
+    .submit {
+        width: 80%; /* Hacer el botón más grande */
+    }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (max-width: 1044px) {
+    .formContainer {
+        width: 24rem;  /* Reducir el ancho para pantallas medianas */
+    }
+
+    .formContainer > h1 {
+        font-size: 2.2rem;
+    }
+
+    .submit {
+        width: 3rem;
+    }
+}
+
+/* Pantallas grandes (desktop) */
+@media (min-width: 1025px) {
+    .formContainer {
+        width: 25rem;  /* Ancho optimizado para pantallas grandes */
+    }
+
+    .formContainer > h1 {
+        font-size: 2.5rem;
+    }
+
+    .submit {
+        width: 40%;
+    }
+}
+
+/*Elimine la imagen para que no estorbe en el celular*/
+@media (max-width: 600px) {
+    .imgContainer {
+        display: none;
+    }
+}

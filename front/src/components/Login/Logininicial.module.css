@@ -1,0 +1,133 @@
+/* .divcontainer {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;                
+  width: 100%;
+  border: red 2px solid ;
+  left: 50%;
+  } */
+  
+  .h1title {
+
+    /* font-size: 2.5rem;
+    color: #535353;
+    margin-bottom: 1rem;
+    font-family: serif;
+    font-weight: bold; */
+    
+    margin-bottom: 50px;
+    font-size: xx-large;
+    font-weight: 600;
+
+    color: rgb(84, 84, 94);
+  } 
+  
+  .divprincipal {
+    gap: 5rem;
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   
+    /* background: linear-gradient(to bottom, rgba(135, 206, 250, 1), rgba(255, 255, 255, .6));  */
+    background-color: #fff;
+    color: rgb(84, 84, 94);  
+    font-weight: 600;         
+    /* padding: 20px;            Espaciado interno */
+  
+    border-radius: 5px;       /* Bordes redondeados */
+    text-align: center;        /* Alinear texto al centro */
+    align-items: center;
+    height: 100vh;                /* Establece la altura del contenedor (opcional) */
+    /* position: relative;  */
+    width: 100%;
+
+  }
+  
+  .divregister {
+   
+    display: flex;
+    
+     background: fff;
+     /* color: white;              */
+     /* padding: 20px;            Espaciado interno */
+     border-radius: 15px;       /* Bordes redondeados */
+     text-align: center;        /* Alinear texto al centro */
+     align-items: center;
+     width: 25rem;
+     height: 600px;
+     margin-right: 20px;
+     /* height: 100vh;                Establece la altura del contenedor (opcional) */
+     z-index: 1; /* Asegura que esté encima de otros elementos */
+   }
+  
+  .form {
+    /* display: flex;
+   flex-direction: column;
+   color: black;  */
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 100px;
+   background-color: rgb(255, 255, 255);
+
+
+   /* border-radius: 10px;  */
+
+   /* border: 1px  rgb(59, 55, 55); */
+    /* border: rgb(172, 169, 169) 1px solid;  */
+
+   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+
+
+
+
+  
+  
+  }
+  
+  .input, .select { 
+    padding: 10px; 
+    margin: 10px; 
+
+    /*border: none;  Elimina todos los bordes */
+    border: 2px solid #aaa7a7; /* Agrega solo un borde inferior */
+    outline: none; /* Elimina el contorno al hacer clic */
+
+    width: 100%; /* Ajusta el ancho del input */
+    box-shadow: none; /* Elimina cualquier sombra */
+ 
+    background: rgba(255, 255, 255,0); /* Fondo blanco con 80% de opacidad */
+    color: #070707;
+    font-family: 'Roboto', sans-serif;  /* Aplica la fuente Roboto */
+  }
+  
+  /* Opcional: Cambiar el color del borde inferior al enfocar */
+  .input:focus {
+    border: 2px solid rgb(90, 90, 243); /* Cambia el color del borde inferior al enfocar */
+  }
+  
+  
+
+  .boton {
+    background-color: rgb(173, 143, 126); /* Color de fondo azul */
+    color: rgb(7, 7, 7);           /* Color del texto blanco */
+    padding: 10px 20px;    /* Espaciado interno */
+    /* border: none;          Sin borde */
+    border-radius: 5px;    /* Bordes redondeados */
+    cursor: pointer;        /* Cambia el cursor al pasar el ratón */
+    font-size: 15px;       /* Tamaño de fuente */
+    margin-top: 35px;
+    transition: background-color 0.3s; /* Transición suave al cambiar el color */
+  }
+  
+
+
+  .imgform {
+    border-radius: 7px;
+    width: 100%;
+    height: 35rem;
+    margin-right: 0rem;
+
+  }
